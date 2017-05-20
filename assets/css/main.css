@@ -22,19 +22,20 @@ nav a:hover{
 }
 
 /*GALERIA*/
-.galeria {
+#galeria {
 	text-align: center;
-	padding: 50px;
-
+	padding: 50px 0px;
+	margin: 0 auto;
 }
 .imagenes {
     position: relative;
-	border: 8px solid #7A7476;
 	display: inline-block;
+	width: 13%;
 }
 .imagenes img {
 	width: 200px;
 	filter: grayscale(100%);
+	border: 8px solid #7A7476;
 }
 .imagenes i {
     position: absolute;
@@ -68,13 +69,24 @@ nav a:hover{
 }
 
 /*SECCION 3 -PARRAFOS*/
-.parrafos {
+#textos{
   width: 70%;
+  height: 300px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
-.parrafos div{
+.parrafos{
 	width: 45%;
 	display: inline-block;
  	padding: 50px 10px 40px 35px;
 }
+
+/*OCULTANDO ELEMENTOS*/
+
+.parrafos.esconder{
+	display: none;
+}
+.imagenes.esconder{
+	display: none;
+}
+
