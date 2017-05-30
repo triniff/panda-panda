@@ -1,12 +1,12 @@
 body {
 	margin:0;
 	font-family: 'Raleway', sans-serif;
-	background-image: url(../img/fondo.jpg);
+	background-color: #1C181A;
 }
 
 /*NAV*/
 nav {
-	background-color: #F1B538;
+	background-color: #AB6A5C;
 	padding-left: 100px;
 }
 nav a {
@@ -17,8 +17,8 @@ nav a {
 	padding: 20px;
 }
 nav a:hover{
-	background-color: #FFFFFF;
-	color: #F1B538;
+	background-color: #FFCCC0;
+	color: #AB6A5C;
 }
 
 /*GALERIA*/
@@ -26,6 +26,7 @@ nav a:hover{
 	text-align: center;
 	padding: 50px 0px;
 	margin: 0 auto;
+	width: 100%; 	
 }
 .imagenes {
     position: relative;
@@ -33,18 +34,22 @@ nav a:hover{
 	width: 13%;
 }
 .imagenes img {
-	width: 200px;
+	width: 100%;
 	filter: grayscale(100%);
 	border: 8px solid #7A7476;
 }
+.imagenes img:hover{
+	filter: grayscale(0%);
+}
 .imagenes i {
     position: absolute;
-    left: 5px;
+    right: 5px;
     top: 5px;
     color: white;
+    cursor: pointer;
  }
 .imagenes i:hover{
-    color: #F1B538;
+    color: #FFCCC0;
 }
 
 
@@ -55,16 +60,18 @@ nav a:hover{
 }
 .botones a{
 	text-decoration: none;
-	background-color: #F1B538;
-	color: #FFFFFF;
+	background-color: #FFCCC0;
+	color: #3E3B3C;
 	display: inline-block;
 	padding: 10px;
 	width: 300px;
 	margin:auto;
+	font-weight: 800;
 }
 
 .botones a:hover {
 	background-color: #7A7476;
+	color: #FFCCC0;
 
 }
 
@@ -83,10 +90,6 @@ nav a:hover{
 
 /*OCULTANDO ELEMENTOS*/
 
-.parrafos.esconder{
+.esconder{
 	display: none;
 }
-.imagenes.esconder{
-	display: none;
-}
-
